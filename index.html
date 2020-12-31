@@ -103,6 +103,8 @@
 					<audio id="song" autoplay loop>
 						<source src="audio/song.mp3" autoplay="autoplay">
 					</audio>
+					<iframe src="audio/song.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+					</iframe> 
 					<div class="groom">
 						<img src="images/wanita.png" alt="groom" class="img-responsive">
 					</div>
@@ -219,6 +221,16 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		if (!isChrome){
+			$('#iframeAudio').remove()
+		}
+		else {
+			$('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+		}
+	</script>
 
 	</body>
 </html>
