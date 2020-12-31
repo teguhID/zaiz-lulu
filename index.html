@@ -100,7 +100,7 @@
 		<div class="container">
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
-					<audio id="song" autoplay>
+					<audio id="song" autoplay loop>
 						<source src="audio/song.mp3" autoplay="autoplay">
 					</audio>
 					<div class="groom">
@@ -163,6 +163,9 @@
 								<div class="timeline-body">
 									<p>Jln Bebedahan rt03/03 Babakan penghulu Cinambo</p>
 								</div>
+								<div class="timeline-body">
+									<img src="images/bebedahan.png" alt="" >
+								</div>
 							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
@@ -176,52 +179,12 @@
 								<div class="timeline-body">
 									<p>Jl.Cogreg No.59  RT 02/09 Desa Tanjungsari Kec.Karangpawitan Kab.Garut</p>
 								</div>
+								<div class="timeline-body">
+									<img src="images/garut.png" alt="" >
+								</div>
 							</div>
 						</li>
 			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url('https://i.pinimg.com/originals/d4/9e/7e/d49e7ead80eda687f84e62ead85b726e.jpg');">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Kolom Komentar</h2>
-					<p>Yuk kasih komentar berupa ucapan selamat, doa, atau yang lainnya</p>
-				</div>
-			</div>
-			<div class="row animate-box" style="margin-bottom: 50px;">
-				<div class="row" style="padding-left: 50px; padding-right: 50px;">
-					<div class="col-md-12 col-sm-12">
-						<h3 style=" color: white;"><strong>Ujang</strong></h3>
-						<h5 style="margin-top: -5px;  color: white;">Selamat yah ujang</h5>
-						<hr style="border: solid 1px rgba(255, 255, 255, 0.337);">
-					</div>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-12 col-sm-12">
-							<div class="form-group">
-								<label for="name" class="sr-only">Nama</label>
-								<input type="name" class="form-control" id="name" placeholder="Nama">
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<div class="form-group">
-								<label for="email" class="sr-only">Komentar</label>
-								<textarea class="form-control" id="email" placeholder="Komentar" cols="30" rows="10"></textarea>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12" style="margin-top: 30px;">
-							<button type="submit" class="btn btn-default btn-block">Submit</button>
-						</div>
-					</form>
 				</div>
 			</div>
 		</div>
@@ -256,26 +219,6 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-
-	<script>
-    var d = new Date(new Date().getTime() + 100 * 120 * 120 * 2000);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
 
 	</body>
 </html>
