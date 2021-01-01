@@ -63,131 +63,152 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<style>
+		.mail-animation {
+			width: 100px;
+			height: 100px;
+			animation: crescendo 1s alternate infinite ease-in;
+		  }
+		  
+		  @keyframes crescendo {
+			0%   {transform: scale(.9);}
+			100% {transform: scale(1);}
+		  }
+	</style>
 
 	</head>
 	<body>
 
 	<div class="fh5co-loader"></div>
 	
-	<div style="overflow-x: hidden; width: 100%; height: 100%;">
-	<nav class="fh5co-nav">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<div id="fh5co-logo"><img src="images/love.png" alt=""></div>
+	<div style="overflow-x: hidden; display: flex; justify-content: center; align-items: center; height: 100vh;" id="mail-content">
+		<img class="mail-animation" src="images/mail.png" alt="" id="mail-button">
+	</div>
+
+	<div style="overflow-x: hidden; width: 100%; height: 100%; display: none;" id="main-content">
+		
+		<nav class="fh5co-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<div id="fh5co-logo"><img src="images/love.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url('images/bg-main.jpeg');" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h2 style="font-size: 20px;">Dengan Bahagia Kami Nikahkan</h2>
+								<h1 style="font-size: 40px;">Zaiz Al Farizi <br> dan <br> Lulu Lugina S.Pd </h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fh5co-couple">
+			<div class="container">
+				<div class="couple-wrap animate-box">
+					<div class="couple-half">
+						<audio id="myAudio">
+							<source src="audio/song.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+						
+						<div class="groom">
+							<img src="images/wanita.png" alt="groom" class="img-responsive">
+						</div>
+						<div class="desc-groom">
+							<h3>Lulu Lugina S.Pd</h3>
+							<p>Putri Keenam dari Bapak (alm) Abdul Rasyid dan Ibu ii Saripah</p>
+						</div>
+					</div>
+					<p class="heart text-center"><i class="icon-heart2"></i></p>
+					<div class="couple-half">
+						<div class="bride">
+							<img src="images/pria.png" alt="groom" class="img-responsive">
+						</div>
+						<div class="desc-bride">
+							<h3>Zaiz Al Farizi</h3>
+							<p>Putra ketiga dari bapak Nasiran dan ibu Iroh Rohanah</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url('images/bg-main.jpeg');" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+		<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/bg-ayat.jpeg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
 					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h2 style="font-size: 20px;">Dengan Bahagia Kami Nikahkan</h2>
-							<h1 style="font-size: 40px;">Zaiz Al Farizi <br> dan <br> Lulu Lugina S.Pd </h1>
+						<div class="display-tc">
+							<div class="col-md-12 col-sm-12 animate-box">
+								<h2>Ar-Rum ayat 21</h2>
+								<h2>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</h2>
+								<h2>Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</h2>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
 
-	<div id="fh5co-couple">
-		<div class="container">
-			<div class="couple-wrap animate-box">
-				<div class="couple-half">
-					<iframe src="audio/song.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-					</iframe> 
-					<div class="groom">
-						<img src="images/wanita.png" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-groom">
-						<h3>Lulu Lugina S.Pd</h3>
-						<p>Putri Keenam dari Bapak (alm) Abdul Rasyid dan Ibu ii Saripah</p>
+		<div id="fh5co-couple-story">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<h2>Jadwal Acara</h2>
+						<p>Berikut jadwal acara yang telah kami persiapkan</p>
 					</div>
 				</div>
-				<p class="heart text-center"><i class="icon-heart2"></i></p>
-				<div class="couple-half">
-					<div class="bride">
-						<img src="images/pria.png" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-bride">
-						<h3>Zaiz Al Farizi</h3>
-						<p>Putra ketiga dari bapak Nasiran dan ibu Iroh Rohanah</p>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0">
+						<ul class="timeline animate-box">
+							<li class="animate-box">
+								<div class="timeline-badge"></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title"><img src="images/calendar.png" alt="" height="30"> Tasyakuran ( Mempelai Pria )</h3>
+										<span class="date">Sabtu, 9 Januari 2021</span>
+									</div>
+									<div class="timeline-body">
+										<p>Jln Bebedahan rt03/03 Babakan penghulu Cinambo</p>
+									</div>
+									<div class="timeline-body">
+										<img src="images/bebedahan.png" alt="" style="width: 100%; height: auto;">
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<img src="images/event.png" alt="">
+								<div class="timeline-badge"></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title"><img src="images/calendar.png" alt="" height="30"> Akad & Resepsi</h3>
+										<span class="date">Ahad, 17 Januari 2021</span>
+									</div>
+									<div class="timeline-body">
+										<p>Jl.Cogreg No.59  RT 02/09 Desa Tanjungsari Kec.Karangpawitan Kab.Garut</p>
+									</div>
+									<div class="timeline-body">
+										<img src="images/garut.png" alt="" style="width: 100%; height: auto;">
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/bg-ayat.jpeg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-12 col-sm-12 animate-box">
-							<h2>Ar-Rum ayat 21</h2>
-							<h2>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</h2>
-							<h2>Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-couple-story">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Jadwal Acara</h2>
-					<p>Berikut jadwal acara yang telah kami persiapkan</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-badge"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title"><img src="images/calendar.png" alt="" height="30"> Tasyakuran ( Mempelai Pria )</h3>
-									<span class="date">Sabtu, 9 Januari 2021</span>
-								</div>
-								<div class="timeline-body">
-									<p>Jln Bebedahan rt03/03 Babakan penghulu Cinambo</p>
-								</div>
-								<div class="timeline-body">
-									<img src="images/bebedahan.png" alt="" style="width: 100%; height: auto;">
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<img src="images/event.png" alt="">
-							<div class="timeline-badge"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title"><img src="images/calendar.png" alt="" height="30"> Akad & Resepsi</h3>
-									<span class="date">Ahad, 17 Januari 2021</span>
-								</div>
-								<div class="timeline-body">
-									<p>Jl.Cogreg No.59  RT 02/09 Desa Tanjungsari Kec.Karangpawitan Kab.Garut</p>
-								</div>
-								<div class="timeline-body">
-									<img src="images/garut.png" alt="" style="width: 100%; height: auto;">
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	</div>
 
@@ -220,6 +241,15 @@
 	<script src="js/main.js"></script>
 
 	<script>
+		
+		$("#mail-button").click(function(){
+
+			$('#main-content').show(890);
+			$('#mail-content').hide();
+			$('audio')[0].play();
+
+		}); 
+
 	</script>
 
 	</body>
